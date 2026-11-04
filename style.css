@@ -1,0 +1,244 @@
+:root{--navy:#101b32;--navy-2:#142542;--ink:#1a2942;--muted:#738099;--gold:#e9c181;--cream:#f7f4ef;--line:#e5e6e8;--font:'Noto Sans KR',sans-serif;--latin:'DM Sans',sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;background:#fff;color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;overflow-x:hidden}button,input{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.container{width:min(1190px,calc(100% - 64px));margin:auto}.skip-link{position:absolute;top:-60px;left:10px;z-index:1000;padding:12px;background:#fff;color:#111}.skip-link:focus{top:10px}.header{position:absolute;top:0;left:0;right:0;z-index:40;border-bottom:1px solid rgba(255,255,255,.12);color:#fff;transition:background .3s}.header.scrolled,.header.menu-open{position:fixed;background:rgba(14,27,50,.97);backdrop-filter:blur(18px);box-shadow:0 10px 30px rgba(0,0,0,.08)}.nav-inner{height:94px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{display:inline-flex;gap:12px;align-items:center;flex-shrink:0}.brand-symbol{display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(235,192,119,.63);border-radius:50%;position:relative}.brand-logo{width:44px;height:44px;border:none;border-radius:0;background:none;padding:0;overflow:visible}.brand-logo img{width:100%;height:100%;object-fit:contain;display:block;filter:drop-shadow(0 3px 10px rgba(0,0,0,.22))}.footer-brand .brand-logo img{filter:none}.brand-cross{display:none}.brand-type{display:flex;flex-direction:column;gap:3px}.brand-type strong{font-size:16px;font-weight:800;letter-spacing:-.05em}.brand-type small{font-family:var(--latin);font-size:8.2px;letter-spacing:.13em;color:rgba(255,255,255,.63)}.nav{display:flex;align-items:center;gap:30px}.nav>a{font-size:12.5px;font-weight:600;color:rgba(255,255,255,.81);transition:color .2s}.nav>a:hover,.nav>a:focus-visible{color:var(--gold)}.nav .nav-cta{border:1px solid rgba(255,255,255,.32);padding:12px 18px;border-radius:3px;color:#fff}.nav-cta span{margin-left:9px}.menu-toggle{display:none;background:none;border:0;padding:10px;color:inherit}.menu-toggle span{display:block;width:23px;height:2px;background:currentColor;margin:5px 0}.hero{position:relative;min-height:800px;overflow:hidden;color:#fff;background:radial-gradient(ellipse at 78% 51%,rgba(63,73,118,.76) 0%,transparent 48%),radial-gradient(ellipse at 96% 6%,rgba(148,75,115,.31),transparent 40%),linear-gradient(116deg,#0e192e 9%,#142342 51%,#22234c 100%)}.hero:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(7,15,30,.5),transparent 56%);z-index:0}.hero-noise{position:absolute;inset:0;opacity:.11;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.47' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.3'/%3E%3C/svg%3E")}.hero-orb{position:absolute;border-radius:50%;filter:blur(3px);pointer-events:none}.orb-one{width:500px;height:500px;background:radial-gradient(circle,rgba(233,193,129,.12),transparent 66%);right:3%;top:15%}.orb-two{width:490px;height:490px;background:radial-gradient(circle,rgba(146,94,184,.19),transparent 70%);right:25%;bottom:0}.hero-stroke{position:absolute;border:1px solid rgba(236,192,129,.12);width:920px;height:920px;transform:rotate(-22deg);border-radius:50%;right:-245px;top:-205px}.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:57% 43%;min-height:700px;align-items:center;padding-top:112px}.hero-copy{position:relative;z-index:3;padding:32px 0 72px}.eyebrow{font-size:11px;font-family:var(--latin);font-weight:800;letter-spacing:.2em;display:flex;align-items:center;gap:12px;color:var(--gold)}.eyebrow-line{width:27px;height:1px;background:currentColor;opacity:.65;flex:0 0 27px}.eyebrow-year{border:1px solid rgba(233,193,129,.35);border-radius:20px;padding:5px 9px;margin-left:5px;letter-spacing:.05em}.hero-pretitle{color:#c9d0dc;font-size:15px;font-weight:600;margin:42px 0 12px;letter-spacing:.04em}.hero h1{font-size:clamp(44px,5vw,75px);font-weight:900;line-height:1.25;letter-spacing:-.078em;margin:0;word-break:keep-all}.hero h1 span{color:#f8d59b}.hero-theme{font-size:clamp(19px,2.35vw,30px);line-height:1.5;margin:24px 0 19px;color:#e4d8d1;font-weight:500;letter-spacing:-.055em}.hero-theme strong{color:#f2ce90;font-weight:800}.hero-lead{font-size:14px;color:#b8c3d4;line-height:2.1;margin:0 0 33px;word-break:keep-all}.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.btn{min-height:51px;border-radius:3px;display:inline-flex;justify-content:center;align-items:center;gap:25px;padding:14px 23px;font-size:13px;font-weight:700;transition:transform .2s,background .2s,border-color .2s;border:1px solid transparent;white-space:nowrap}.btn:hover{transform:translateY(-2px)}.btn-gold{background:var(--gold);color:#18223b}.btn-gold:hover{background:#f2d5a6}.btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.43)}.btn-outline:hover{border-color:var(--gold)}.btn-dark{background:#162945;color:white}.btn-dark:hover{background:#253f64}.btn-soft{background:#f0f1f1;color:#182841}.hero-visual{position:relative;align-self:end;min-height:590px}.hero-pastor{position:absolute;z-index:2;bottom:0;right:-20px;width:min(105%,468px);height:610px;object-fit:cover;object-position:50% 38%;border-radius:36% 36% 0 0;mask-image:linear-gradient(to right,transparent 0%,#000 7%,#000 100%),linear-gradient(to bottom,#000 0%,#000 72%,transparent 98%);mask-composite:intersect;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 7%,#000 100%),linear-gradient(to bottom,#000 0%,#000 72%,transparent 98%);-webkit-mask-composite:source-in;filter:saturate(.91)}.hero-ring{position:absolute;border:1px solid rgba(240,199,129,.16);border-radius:50%;z-index:1}.ring-a{width:590px;height:590px;right:-120px;top:20px}.ring-b{width:455px;height:455px;right:-40px;top:86px}.hero-speaker-tag{position:absolute;z-index:5;bottom:77px;right:-5px;display:flex;gap:16px;align-items:center;padding:18px 22px;background:rgba(8,18,35,.86);border-left:2px solid var(--gold);backdrop-filter:blur(10px);box-shadow:0 15px 30px rgba(0,0,0,.22)}.hero-speaker-tag .tag-line{display:none}.hero-speaker-tag div{display:flex;flex-direction:column;gap:5px}.hero-speaker-tag small{color:var(--gold);font:700 10px var(--latin);letter-spacing:.2em}.hero-speaker-tag strong{font-size:22px;letter-spacing:-.05em}.hero-speaker-tag span:last-child{font-size:11px;color:#b3c0d2}.hero-footer{position:relative;z-index:3;display:flex;align-items:center;gap:25px;padding:19px 0 30px;border-top:1px solid rgba(255,255,255,.18)}.hero-fact{display:flex;align-items:center;gap:14px;min-width:0}.fact-icon{color:var(--gold);font-size:24px;font-family:var(--latin)}.hero-fact>div{display:flex;flex-direction:column;gap:6px}.hero-fact small{color:#b1bbcd;font-size:10px}.hero-fact strong{font-size:13px;font-weight:700}.hero-fact strong span{font:600 10px var(--latin);color:#f1cf96}.fact-separator{height:35px;width:1px;background:rgba(255,255,255,.16)}.scroll-cue{display:none}.countdown-wrap{background:#f1e7d8;border-bottom:1px solid #e8dfd0}.countdown-inner{padding:28px 0;display:flex;align-items:center;justify-content:space-between;gap:30px}.countdown-intro{display:flex;flex-direction:column;gap:8px}.eyebrow-dark{color:#a97c43}.countdown-intro strong{font-size:21px;letter-spacing:-.06em}.countdown{display:flex;align-items:center;gap:15px}.countdown div{min-width:60px;display:flex;flex-direction:column;align-items:center;gap:2px}.countdown strong{font:800 33px var(--latin);color:#1c2c45;font-variant-numeric:tabular-nums}.countdown span{font:700 9px var(--latin);letter-spacing:.12em;color:#978777}.countdown i{font-size:25px;font-style:normal;color:#b2a18c;margin-top:-12px}.section{padding:120px 0}.about-section{background:#fff}.about-grid{display:grid;grid-template-columns:1.12fr 1fr;gap:95px;align-items:center}.section-title{font-size:clamp(30px,3.3vw,48px);font-weight:800;line-height:1.42;letter-spacing:-.07em;margin:25px 0 26px;word-break:keep-all}.section-title em{font-style:normal;color:#b58b50}.body-text{max-width:460px;color:#6a7584;line-height:2.2;font-size:15px;word-break:keep-all;margin:0 0 27px}.text-link{display:inline-flex;gap:20px;align-items:center;font-size:13px;font-weight:800;border-bottom:1px solid #aa8c62;padding-bottom:11px;color:#243653}.text-link span{color:#ac8a5c}.about-side{position:relative;padding-left:46px;border-left:1px solid #e7e4df}.vertical-stamp{position:absolute;left:-47px;bottom:10px;writing-mode:vertical-rl;transform:rotate(180deg);font:700 9px var(--latin);letter-spacing:.18em;color:#c3c7cd}.about-info-card{padding:18px 0 25px;border-bottom:1px solid var(--line)}.about-info-card:last-child{border:0}.info-no{font:700 10px var(--latin);color:#b68c58;letter-spacing:.13em}.about-info-card h3{font:800 33px var(--latin);letter-spacing:-.045em;margin:7px 0 5px;color:#20314d}.about-info-card h3 span{font-size:17px;color:#b6a692}.about-info-card p{font-size:12px;color:#86909c;margin:0}.schedule-section{background:linear-gradient(155deg,#0d1b31 0%,#152941 100%);color:#fff}.schedule-head{display:flex;align-items:end;justify-content:space-between;gap:25px}.title-light{color:white}.schedule-head .section-title{margin-bottom:8px}.section-subtitle{font-size:14px;color:#a9b6c5;margin:0;line-height:1.9}.schedule-tools{padding-bottom:10px}.small-outline{background:transparent;color:#e9c181;border:1px solid rgba(233,193,129,.5);font-size:12px;font-weight:700;padding:13px 17px;border-radius:3px}.small-outline:hover{background:rgba(233,193,129,.12)}.day-filters{display:flex;gap:7px;flex-wrap:wrap;margin:39px 0 20px}.day-filter{border:1px solid rgba(255,255,255,.15);color:#a3b5c9;background:rgba(255,255,255,.04);padding:11px 19px;border-radius:3px;font-weight:700;font-size:12px;transition:all .2s}.day-filter span{font-family:var(--latin);margin-left:8px;font-size:10px;color:inherit;opacity:.75}.day-filter:hover,.day-filter.active{background:#ead0a2;color:#13243c;border-color:#ead0a2}.schedule-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.schedule-card{display:flex;align-items:stretch;min-height:198px;background:#1b3049;border:1px solid rgba(255,255,255,.09);border-radius:4px;overflow:hidden;transition:border-color .2s,transform .2s}.schedule-card:hover{border-color:rgba(233,193,129,.53);transform:translateY(-2px)}.schedule-date{display:flex;flex-direction:column;align-items:center;justify-content:center;width:122px;min-width:122px;border-right:1px solid rgba(255,255,255,.1);background:#172940;padding:16px 10px}.schedule-date small{font:700 11px var(--latin);letter-spacing:.17em;color:#d1b183}.schedule-date strong{font:800 54px var(--latin);letter-spacing:-.06em;line-height:1.12;color:#fff;margin:8px 0 4px}.schedule-date span{color:#b9c3d2;font-size:12px}.schedule-card-info{padding:23px 21px;min-width:0;flex:1}.schedule-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px}.schedule-card-top .sermon-label{color:#eecb91;font-size:11px;font-weight:700}.time-pill{font:700 11px var(--latin);color:#e1e8f4;border:1px solid rgba(255,255,255,.19);padding:5px 8px;border-radius:2px;white-space:nowrap}.schedule-card h3{font-size:17px;line-height:1.65;letter-spacing:-.04em;word-break:keep-all;margin:13px 0 16px;font-weight:700;color:#fff}.schedule-card-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px}.schedule-card-bottom p{margin:0;font-size:11px;color:#9fb2c8}.watch-link{font-size:11px;color:#f0ca87;font-weight:700;white-space:nowrap}.coming-label{font-size:10px;color:#8ea3b9;white-space:nowrap}.schedule-footnote{display:flex;gap:9px;color:#9cb0c6;font-size:11px;margin-top:25px}.footnote-star{color:#e5ba76;font-size:17px}.video-section{background:#f8f7f4}.section-header-center{text-align:center;display:flex;flex-direction:column;align-items:center}.section-header-center .section-title{margin:17px 0 10px}.dark-subtitle{color:#7e8996}.video-container{margin-top:41px}.video-empty{position:relative;min-height:350px;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at 50% 43%,rgba(113,121,148,.29),transparent 43%),linear-gradient(135deg,#182942,#0c182b);color:white;border-radius:5px;padding:50px 20px;text-align:center}.video-empty:before,.video-empty:after{content:'';position:absolute;inset:28px;border:1px solid rgba(255,255,255,.1);pointer-events:none}.video-empty:after{inset:48px;border-color:rgba(255,255,255,.05)}.play-circle{border:1px solid rgba(237,198,137,.65);width:75px;height:75px;border-radius:50%;display:grid;place-items:center;color:#e9c181;font-size:28px;margin:0 auto 19px}.video-empty h3{font-size:24px;letter-spacing:-.05em;margin:0 0 9px}.video-empty p{color:#adbccc;font-size:13px;line-height:1.8;margin:0}.video-actions{text-align:center;margin-top:25px}.video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.video-item{background:white;border:1px solid #e8e8e8;overflow:hidden;border-radius:5px}.video-frame{position:relative;aspect-ratio:16/9;background:#12213b}.video-frame iframe{width:100%;height:100%;border:0}.video-meta{padding:17px 20px}.video-meta small{display:block;color:#af834a;font-size:11px;font-weight:700;margin-bottom:5px}.video-meta h3{font-size:15px;line-height:1.65;margin:0;font-weight:700;word-break:keep-all}.speaker-section{background:#182a42;color:#fff;overflow:hidden}.speaker-grid{display:grid;grid-template-columns:1fr 1fr;min-height:660px;align-items:center;gap:85px}.speaker-image-wrap{position:relative;align-self:stretch;min-height:650px;display:flex;align-items:flex-end;justify-content:center;overflow:hidden}.speaker-image-bg{position:absolute;inset:110px 30px 0;background:radial-gradient(ellipse at center,#593981 2%,#232b58 44%,transparent 77%);border-radius:50% 50% 0 0}.speaker-image-wrap img{width:100%;max-height:620px;object-fit:contain;object-position:bottom;position:relative;z-index:1;mask-image:linear-gradient(to bottom,#000 0%,#000 72%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 72%,transparent 100%)}.speaker-image-caption{position:absolute;bottom:22px;left:0;z-index:2;font:700 10px var(--latin);color:#ddb879;letter-spacing:.2em}.speaker-copy{padding:70px 0}.speaker-copy .section-title{margin:33px 0 12px}.speaker-position{color:#dfbc89;font-weight:600;font-size:16px}.speaker-rule{width:60px;height:1px;background:var(--gold);opacity:.7;margin:37px 0}.speaker-description{font-size:14px;line-height:2.1;color:#b6c1d0;max-width:390px;word-break:keep-all;margin:0 0 35px}.light-link{color:#fff}.location-section{background:#fff}.location-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.location-copy .section-title{margin:22px 0 33px}.location-detail{display:flex;align-items:flex-start;gap:20px;padding:16px 0;border-bottom:1px solid #edf0f2}.detail-icon{width:43px;height:43px;border-radius:50%;border:1px solid #e7e1d7;display:grid;place-items:center;flex:0 0 43px;color:#ae8655;font-size:22px}.location-detail>div{display:flex;flex-direction:column;gap:7px}.location-detail small{font:700 10px var(--latin);letter-spacing:.16em;color:#b38d59}.location-detail strong{font-size:15px;letter-spacing:-.035em}.location-detail p{font-size:13px;color:#8c96a1;line-height:1.7;margin:0}.location-buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.location-buttons .btn{font-size:12px;min-height:48px;gap:14px}.map-wrap{height:465px;position:relative;box-shadow:0 16px 40px rgba(13,30,51,.1);border:6px solid #f4f4f4;background:#e8ebe7}.map-wrap iframe{display:block;width:100%;height:100%;border:0;filter:saturate(.8)}.map-location-tag{position:absolute;bottom:0;left:0;background:#172941;padding:19px 20px;display:flex;flex-direction:column;gap:4px;color:white}.map-location-tag strong{font:700 11px var(--latin);letter-spacing:.08em}.map-location-tag span{font:500 10px var(--latin);color:#c6aa7d;letter-spacing:.13em}.closing-section{position:relative;overflow:hidden;background:linear-gradient(125deg,#0c192e,#1d3151);text-align:center;color:#fff;padding:100px 0 85px}.closing-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 10%,rgba(243,192,118,.13),transparent 49%);pointer-events:none}.closing-content{position:relative}.closing-content .eyebrow{justify-content:center}.closing-content h2{font-size:clamp(32px,4.1vw,57px);line-height:1.5;letter-spacing:-.065em;margin:26px auto 15px;word-break:keep-all}.closing-content h2 em{font-style:normal;color:#f2cd92}.closing-content p{font-size:13px;color:#b2c0d2}.closing-buttons{display:flex;justify-content:center;gap:11px;flex-wrap:wrap;margin:33px auto 0}.poster-link{display:inline-block;color:#c5ae8b;border-bottom:1px solid #6d6a64;padding:5px 0;margin-top:30px;font-size:12px}.footer{background:#0b1423;color:#fff;padding:46px 0}.footer-grid{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-grid p{color:#8e9bb0;font-size:11px;margin:19px 0 0}.footer-right{display:flex;align-items:flex-end;flex-direction:column;gap:12px}.footer-right a{color:#bbc5d4;font-size:12px}.footer-right small{font:400 10px var(--latin);color:#66748b}.toast{position:fixed;bottom:28px;left:50%;transform:translate(-50%,20px);background:#233750;color:white;padding:13px 22px;border-radius:7px;box-shadow:0 20px 40px rgba(0,0,0,.2);z-index:100;font-size:13px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}.toast.show{opacity:1;transform:translate(-50%,0)}button:focus-visible,a:focus-visible{outline:3px solid #dfb979;outline-offset:3px}
+@media(max-width:1100px){.nav{gap:17px}.hero h1{font-size:58px}.hero-grid{grid-template-columns:56% 44%}.hero-pastor{right:-60px}.hero-speaker-tag{right:-20px}.about-grid{gap:48px}.location-grid{gap:35px}}
+@media(max-width:850px){.container{width:min(100% - 42px,680px)}.nav-inner{height:76px}.header{position:absolute}.menu-toggle{display:block}.nav{position:absolute;top:75px;left:0;right:0;background:rgba(14,27,50,.98);display:none;flex-direction:column;align-items:stretch;gap:0;padding:15px 22px 28px;border-top:1px solid rgba(255,255,255,.15)}.nav.open{display:flex}.nav>a{font-size:14px;padding:13px 2px}.nav .nav-cta{margin-top:10px;text-align:center}.hero{min-height:0}.hero-grid{display:block;min-height:680px;padding-top:126px}.hero-copy{padding:15px 0 260px}.hero h1{font-size:clamp(39px,8vw,64px)}.hero-pretitle{margin-top:25px}.hero-lead{font-size:13px}.hero-visual{position:absolute;bottom:0;right:0;width:60%;height:420px;min-height:0;pointer-events:none}.hero-pastor{height:430px;bottom:-8px;width:100%;right:-22px;object-position:center 20%}.hero-ring{display:none}.hero-speaker-tag{right:8%;bottom:28px;padding:11px 13px}.hero-speaker-tag strong{font-size:15px}.hero-speaker-tag span:last-child{font-size:9px}.hero-speaker-tag small{font-size:8px}.hero-footer{gap:18px;flex-wrap:wrap;padding:25px 0}.hero-fact{flex:1 1 190px}.fact-separator{display:none}.countdown-inner{flex-direction:column;align-items:center;text-align:center;gap:18px}.about-grid,.location-grid{grid-template-columns:1fr;gap:35px}.about-side{padding-left:30px}.vertical-stamp{display:none}.section{padding:80px 0}.schedule-head{align-items:flex-start;flex-direction:column}.schedule-tools{padding:0}.schedule-list{grid-template-columns:1fr}.speaker-grid{gap:15px;grid-template-columns:1fr 1fr;min-height:480px}.speaker-image-wrap{min-height:450px}.speaker-copy{padding:45px 0}.speaker-copy .section-title{font-size:32px}.speaker-image-wrap img{max-height:430px}.map-wrap{height:400px}.footer-grid{align-items:flex-start}}
+@media(max-width:600px){html{scroll-padding-top:74px}.container{width:calc(100% - 38px)}.brand-symbol{width:37px;height:37px}.brand-logo{width:40px;height:40px}.brand-type strong{font-size:14px}.brand-type small{font-size:7px}.hero-grid{min-height:780px;padding-top:117px}.hero-copy{padding-bottom:295px}.hero-eyebrow{font-size:9px}.hero-pretitle{font-size:12px}.hero h1{font-size:clamp(41px,10vw,57px);line-height:1.29}.hero-theme{font-size:22px;margin:16px 0}.hero-lead{font-size:12px;line-height:1.8}.hero-lead br{display:none}.hero-actions{gap:8px}.hero-actions .btn{padding:12px 13px;gap:10px;min-height:46px;font-size:11px}.hero-visual{height:380px;bottom:0;right:0;width:82%}.hero-pastor{height:394px;right:-40px;width:100%;object-fit:cover;object-position:center 22%}.hero-speaker-tag{bottom:20px;right:12px}.hero-footer{padding:22px 0;gap:20px}.hero-fact{flex:1 1 145px}.hero-fact strong{font-size:12px}.hero-fact small{font-size:9px}.countdown-wrap{padding:5px 0}.countdown-intro strong{font-size:17px}.countdown{gap:10px}.countdown div{min-width:47px}.countdown strong{font-size:29px}.countdown span{font-size:8px}.section{padding:72px 0}.section-title{font-size:31px}.body-text{font-size:13px}.about-info-card h3{font-size:28px}.schedule-head .section-title{font-size:38px}.day-filters{gap:6px;margin:24px 0 16px}.day-filter{padding:10px 12px}.schedule-date{width:82px;min-width:82px;padding:12px 7px}.schedule-date strong{font-size:43px}.schedule-date small{font-size:9px}.schedule-card{min-height:178px}.schedule-card-info{padding:18px 14px}.schedule-card h3{font-size:15px;line-height:1.6}.schedule-card-top .sermon-label{font-size:10px}.time-pill{font-size:10px}.schedule-card-bottom p{font-size:10px}.video-empty{min-height:320px}.video-empty h3{font-size:18px}.video-empty p{font-size:12px}.video-grid{grid-template-columns:1fr}.speaker-grid{display:flex;flex-direction:column-reverse;gap:0}.speaker-copy{padding:73px 0 20px;align-self:stretch}.speaker-copy .section-title{font-size:34px}.speaker-image-wrap{min-height:350px;align-self:stretch}.speaker-image-wrap img{max-height:375px;max-width:390px}.speaker-image-bg{inset:30px 20px 0}.location-copy .section-title{font-size:34px}.map-wrap{height:340px}.location-buttons .btn{padding:13px 15px}.closing-section{padding:75px 0}.closing-content h2{font-size:35px}.footer-grid{flex-direction:column;gap:28px}.footer-right{align-items:flex-start}.footer-right small{line-height:1.7}.toast{width:max-content;max-width:calc(100% - 25px);text-align:center}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* 로고 옆의 한글/영어 교회 이름은 같은 가로 폭을 사용합니다.
+   main.js가 실제 글꼴의 렌더링 폭을 측정하여 자간을 픽셀 단위로 맞춥니다. */
+.brand-type{width:168px;min-width:168px;display:flex;flex-direction:column;align-items:flex-start;gap:1px}
+.brand-type .brand-korean{display:block;width:max-content;max-width:none;white-space:nowrap;letter-spacing:0;font-size:23px;font-weight:800;line-height:1.3;text-align:left;text-align-last:auto;word-break:normal}
+.brand-type .brand-english{display:block;width:max-content;max-width:none;white-space:nowrap;letter-spacing:0;font-family:var(--latin);font-size:10px;font-weight:600;line-height:1.5;text-align:left;text-align-last:auto;color:rgba(255,255,255,.75)}
+@media(max-width:600px){
+  .brand-type{width:148px;min-width:148px}
+  .brand-type .brand-korean{font-size:20px}
+  .brand-type .brand-english{font-size:8.7px}
+}
+
+
+/* 한기홍 목사 강사 소개 — 약력 / 기도 관련 인용문 / 저서 */
+.speaker-grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:66px;min-height:790px;align-items:stretch}
+.speaker-image-wrap{min-height:780px}
+.speaker-image-wrap img{max-height:660px}
+.speaker-copy{padding:80px 0 76px}
+.speaker-copy .section-title{margin:24px 0 8px}
+.speaker-position{margin:0}
+.speaker-rule{margin:25px 0}
+.speaker-profile-group,.speaker-books{max-width:560px}
+.speaker-profile-heading{margin:0 0 12px;color:#efd3a5;font-size:14px;font-weight:800;letter-spacing:-.025em}
+.speaker-profile-list,.speaker-book-list{list-style:none;padding:0;margin:0}
+.speaker-profile-list{display:grid;gap:10px}
+.speaker-profile-list li{position:relative;padding-left:16px;color:#e5ebf4;font-size:13px;line-height:1.72;word-break:keep-all}
+.speaker-profile-list li:before{content:'';position:absolute;left:0;top:.76em;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.speaker-detail{color:#b8c5d5}
+.speaker-quotation{max-width:560px;background:rgba(255,255,255,.055);border-left:2px solid #d5aa68;margin:23px 0 27px;padding:17px 18px}
+.speaker-quotation p{margin:0;font-size:12px;line-height:1.88;color:#c9d5e6;word-break:keep-all}
+.speaker-books-en{font:600 9px var(--latin);letter-spacing:.13em;margin-left:7px;color:#a2b3c8}
+.speaker-book-list{display:grid;gap:7px}
+.speaker-book-list li{font-size:13px;line-height:1.65;color:#fff;font-weight:650;word-break:keep-all}
+.speaker-book-list li span{font-size:12px;font-weight:400;color:#bbc8d9}
+.speaker-link{display:inline-flex;margin-top:28px;font-size:12px}
+@media(max-width:960px){
+  .speaker-grid{display:flex;flex-direction:column-reverse;gap:0;min-height:0}
+  .speaker-copy{width:100%;padding:66px 0 26px}
+  .speaker-image-wrap{min-height:380px;max-height:490px;align-self:stretch}
+  .speaker-image-wrap img{max-height:470px;max-width:430px}
+  .speaker-image-bg{inset:35px 20% 0}
+}
+@media(max-width:600px){
+  .speaker-copy{padding:64px 0 26px}
+  .speaker-copy .section-title{font-size:34px}
+  .speaker-profile-list li{font-size:12.5px}
+  .speaker-quotation{padding:14px 15px}
+  .speaker-quotation p{font-size:12px}
+  .speaker-image-wrap{min-height:360px;max-height:none}
+  .speaker-image-wrap img{max-height:380px;max-width:390px}
+}
+
+
+/* 2026-11-01 사용자 제공 사진/로고 적용 */
+.brand-logo{width:46px;height:46px}
+.brand-logo img{filter:drop-shadow(0 3px 10px rgba(0,0,0,.18))}
+.footer-brand .brand-logo img{filter:none}
+.hero-visual{display:flex;align-items:flex-end;justify-content:center}
+.hero-pastor{width:min(130%,624px);height:774px;right:-48px;object-fit:contain;object-position:center bottom;border-radius:0;mask-image:linear-gradient(to right,transparent 0%,#000 8%,#000 100%),linear-gradient(to bottom,#000 0%,#000 82%,transparent 100%);mask-composite:intersect;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 8%,#000 100%),linear-gradient(to bottom,#000 0%,#000 82%,transparent 100%);-webkit-mask-composite:source-in;filter:saturate(.98) drop-shadow(0 18px 36px rgba(0,0,0,.18))}
+.speaker-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:66px;min-height:780px;align-items:stretch}
+.speaker-image-wrap{min-height:760px;max-height:none;padding:42px 0 30px;align-items:center;justify-content:center}
+.speaker-image-bg{inset:70px 18px 35px;background:linear-gradient(180deg,rgba(95,74,125,.72) 0%,rgba(35,43,88,.8) 50%,rgba(24,42,66,.28) 100%);border-radius:32px;filter:blur(0)}
+.speaker-image-wrap img.speaker-photo{position:relative;z-index:1;width:min(100%,520px);height:640px;max-height:none;max-width:520px;object-fit:cover;object-position:center 18%;border-radius:28px;box-shadow:0 24px 48px rgba(0,0,0,.22);mask-image:none;-webkit-mask-image:none}
+.speaker-image-caption{left:18px;bottom:4px}
+@media(max-width:1100px){.hero-pastor{right:-62px;width:min(134%,564px);height:708px}.speaker-image-wrap{min-height:690px}.speaker-image-wrap img.speaker-photo{width:min(100%,470px);height:580px}}
+@media(max-width:850px){.hero-visual{width:63%;height:430px}.hero-pastor{height:522px;right:-34px;width:120%;object-position:center bottom}.speaker-grid{display:flex;flex-direction:column-reverse;gap:0;min-height:0}.speaker-image-wrap{min-height:460px;max-height:none;padding:30px 0 14px}.speaker-image-bg{inset:24px 12px 18px;border-radius:26px}.speaker-image-wrap img.speaker-photo{width:min(100%,500px);height:400px;max-width:500px;border-radius:24px}}
+@media(max-width:600px){.brand-logo{width:40px;height:40px}.hero-visual{height:392px;width:82%}.hero-pastor{height:478px;right:-28px;width:120%}.speaker-image-wrap{min-height:355px;padding:18px 0 8px}.speaker-image-bg{inset:14px 8px 10px;border-radius:20px}.speaker-image-wrap img.speaker-photo{width:100%;height:310px;max-width:390px;border-radius:18px}.speaker-image-caption{bottom:-4px;left:8px}}
+
+
+/* 2026-11-01: 메인 화면의 강사 얼굴 강조 / 타이틀 간격 축소 /
+   강사 소개 사진 배경 장식 제거. 원본 사진 자체는 변경하지 않습니다. */
+.hero{min-height:0}
+.hero-grid{grid-template-columns:minmax(0,54%) minmax(0,46%);min-height:666px;padding-top:104px}
+.hero-copy{padding:9px 0 29px}
+.hero-pretitle{margin:23px 0 10px}
+.hero h1{font-size:clamp(42px,4.5vw,66px);line-height:1.21;letter-spacing:-.073em}
+.hero-theme{font-size:clamp(19px,2.12vw,28px);margin:16px 0 12px;line-height:1.4}
+.hero-lead{line-height:1.85;margin-bottom:23px}
+.hero-footer{padding:15px 0 23px}
+.hero-visual{min-height:565px}
+.hero-pastor{
+ width:min(120%,645px);height:705px;right:-64px;bottom:-6px;
+ object-fit:contain;object-position:center bottom;border-radius:0;
+ mask-image:linear-gradient(to bottom,#000 0%,#000 79%,transparent 99%);
+ -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 79%,transparent 99%);
+ filter:drop-shadow(0 18px 30px rgba(0,0,0,.18));
+}
+.hero-speaker-tag{right:0;bottom:38px}
+/* 강사소개 사진 자체에 있는 서재 배경은 살리고 보라색 디자인만 삭제 */
+.speaker-image-bg{display:none!important}
+.speaker-image-wrap{background:transparent}
+.speaker-image-wrap img.speaker-photo{filter:none}
+
+@media(max-width:1100px){
+ .hero-grid{grid-template-columns:54% 46%}
+ .hero-pastor{width:125%;height:680px;right:-54px;bottom:-6px}
+ .hero h1{font-size:clamp(42px,5.3vw,60px)}
+}
+@media(max-width:850px){
+ .hero-grid{display:block;min-height:735px;padding-top:118px}
+ .hero-copy{padding:9px 0 286px}
+ .hero h1{font-size:clamp(42px,7vw,61px)}
+ .hero-pretitle{margin:17px 0 9px}
+ .hero-theme{margin:14px 0 9px}
+ .hero-lead{margin-bottom:18px}
+ .hero-visual{position:absolute;bottom:0;right:0;width:65%;height:420px;min-height:0}
+ .hero-pastor{width:118%;height:505px;right:-21px;bottom:-28px}
+ .hero-speaker-tag{bottom:22px;right:5%}
+}
+@media(max-width:600px){
+ .hero-grid{min-height:744px;padding-top:101px}
+ .hero-copy{padding:10px 0 287px}
+ .hero-eyebrow{font-size:9px}
+ .hero-pretitle{margin:16px 0 7px;font-size:12px}
+ .hero h1{font-size:clamp(38px,9.3vw,51px);line-height:1.22}
+ .hero-theme{font-size:20px;margin:11px 0 9px}
+ .hero-lead{font-size:12px;line-height:1.7;margin-bottom:17px}
+ .hero-visual{width:86%;height:365px;right:0;bottom:0}
+ .hero-pastor{height:465px;width:118%;right:-26px;bottom:-61px}
+ .hero-speaker-tag{bottom:18px;right:11px}
+ .hero-footer{padding:16px 0 20px}
+}
+@media(max-width:390px){
+ .hero-grid{min-height:755px}
+ .hero h1{font-size:38px}
+ .hero-pastor{height:439px;width:120%;right:-34px;bottom:-51px}
+}
+
+/* 교회 로고 PDF를 기반으로 교체한 헤더/푸터 로고 */
+.church-lockup{display:block;width:clamp(235px,23vw,290px);height:auto;object-fit:contain;flex-shrink:0}
+@media(max-width:850px){.church-lockup{width:235px}}
+@media(max-width:600px){.church-lockup{width:205px}}
+@media(max-width:370px){.church-lockup{width:185px}}
+/* 사진 아래 고정 강사 타이틀, 한 줄 가로 배치 */
+.hero-speaker-tag{position:absolute;z-index:8;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;gap:15px;width:100%;min-height:66px;padding:14px 18px;border:0;border-top:2px solid #e9c181;background:rgba(9,20,38,.94);box-shadow:0 12px 35px rgba(0,0,0,.22);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);white-space:nowrap}
+.hero-speaker-tag .hero-speaker-label{color:#e9c181;font:800 10px var(--latin);letter-spacing:.12em;white-space:nowrap}
+.hero-speaker-tag .hero-speaker-name{color:#fff;font-size:18px;font-weight:800;letter-spacing:-.04em;white-space:nowrap}
+.hero-speaker-tag .hero-speaker-role{color:#d4dbe9;font-size:12px;font-weight:500;white-space:nowrap}
+@media(max-width:1100px){.hero-speaker-tag{left:0;right:0;bottom:0;gap:10px;padding:12px 9px;min-height:61px}.hero-speaker-tag .hero-speaker-label{font-size:9px}.hero-speaker-tag .hero-speaker-name{font-size:16px}.hero-speaker-tag .hero-speaker-role{font-size:11px}}
+@media(max-width:850px){.hero-speaker-tag{left:auto;right:0;bottom:0;width:calc(100vw - 42px);max-width:none;min-height:56px;gap:13px;padding:11px 15px}}
+@media(max-width:600px){.hero-speaker-tag{left:auto;right:0;bottom:0;width:calc(100vw - 38px);min-height:52px;gap:8px;padding:11px 9px}.hero-speaker-tag .hero-speaker-label{font-size:8.2px;letter-spacing:.055em}.hero-speaker-tag .hero-speaker-name{font-size:13px}.hero-speaker-tag .hero-speaker-role{font-size:10px}}
+@media(max-width:360px){.hero-speaker-tag{gap:6px;padding:9px 6px}.hero-speaker-tag .hero-speaker-label{font-size:7.4px}.hero-speaker-tag .hero-speaker-name{font-size:12px}.hero-speaker-tag .hero-speaker-role{font-size:9px}}
+
+/* 2026-11-03 요청 반영: 교회 로고 10% 축소, 메인 강사 사진 20% 축소.
+   사진 아래 가로형 강사 이름 띠와 기타 섹션은 변경하지 않습니다. */
+.church-lockup { width: clamp(211.5px, 20.7vw, 261px); }
+.hero-pastor { transform: scale(.8); transform-origin: center bottom; }
+@media (max-width:850px) { .church-lockup { width: 211.5px; } }
+@media (max-width:600px) { .church-lockup { width: 184.5px; } }
+@media (max-width:370px) { .church-lockup { width: 166.5px; } }
+
+
+/* 2026-11-03: 원본 전체 인물 사진 사용 — 왼쪽 어깨가 잘리지 않도록
+   크롭된 클로즈업 대신 배경제거 원본을 contain으로 표시합니다.
+   위에서 요청하신 메인 강사정보 가로 고정 띠는 유지합니다. */
+.hero-grid{grid-template-columns:minmax(0,52%) minmax(0,48%)}
+.hero-visual{min-width:0;overflow:visible}
+.hero-pastor{
+  width:min(106%,610px);
+  max-width:none;
+  height:700px;
+  right:0;
+  bottom:0;
+  transform:none;
+  object-fit:contain;
+  object-position:center bottom;
+  border-radius:0;
+  mask-image:linear-gradient(to bottom,#000 0%,#000 87%,transparent 100%);
+  -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 87%,transparent 100%);
+}
+/* 직전 크기에서 로고 10% 추가 축소 */
+.church-lockup{width:clamp(190.35px,18.63vw,234.9px)}
+@media(max-width:1100px){
+ .hero-grid{grid-template-columns:52% 48%}
+ .hero-pastor{width:106%;height:675px;right:0;bottom:0;transform:none}
+}
+@media(max-width:850px){
+ .hero-grid{display:block}
+ .hero-visual{width:70%;height:420px;right:0;bottom:0;min-height:0}
+ .hero-pastor{width:108%;height:495px;right:0;bottom:0;transform:none}
+ .church-lockup{width:190.35px}
+}
+@media(max-width:600px){
+ .hero-visual{width:91%;height:365px;right:0;bottom:0}
+ .hero-pastor{width:106%;height:470px;right:0;bottom:0;transform:none}
+ .church-lockup{width:166.05px}
+}
+@media(max-width:370px){
+ .hero-visual{width:91%;height:350px}
+ .hero-pastor{width:106%;height:446px;right:0;bottom:0;transform:none}
+ .church-lockup{width:149.85px}
+}
+
+/* 2026-11-04: 사용자 요청 — 메인 타이틀 30%, 전체 교회 로고 30% 추가 축소.
+   강사 사진은 12px 아래로 옮기되 레이아웃과 하단 가로 안내선은 움직이지 않습니다. */
+.hero h1{font-size:clamp(29.4px,3.15vw,46.2px)}
+.church-lockup{width:clamp(133.245px,13.041vw,164.43px)}
+.hero-pastor{transform:translateY(12px);transform-origin:center bottom}
+@media(max-width:1100px){
+  .hero h1{font-size:clamp(29.4px,3.71vw,42px)}
+}
+@media(max-width:850px){
+  .hero h1{font-size:clamp(29.4px,4.9vw,42.7px)}
+  .church-lockup{width:133.245px}
+  .hero-pastor{transform:translateY(10px)}
+}
+@media(max-width:600px){
+  .hero h1{font-size:clamp(26.6px,6.51vw,35.7px)}
+  .church-lockup{width:116.235px}
+  .hero-pastor{transform:translateY(8px)}
+}
+@media(max-width:370px){
+  .hero h1{font-size:26.6px}
+  .church-lockup{width:104.895px}
+}
+
+
+/* 2026-11-04 메인 강사 타이틀 바 30% 축소 */
+.hero-speaker-tag{gap:10px;min-height:46px;padding:10px 14px}
+.hero-speaker-tag .hero-speaker-label{font-size:7px;letter-spacing:.1em}
+.hero-speaker-tag .hero-speaker-name{font-size:13px}
+.hero-speaker-tag .hero-speaker-role{font-size:8.5px}
+@media(max-width:1100px){.hero-speaker-tag{gap:8px;min-height:43px;padding:9px 10px}.hero-speaker-tag .hero-speaker-label{font-size:6.4px}.hero-speaker-tag .hero-speaker-name{font-size:12px}.hero-speaker-tag .hero-speaker-role{font-size:8px}}
+@media(max-width:850px){.hero-speaker-tag{width:calc(100vw - 42px);min-height:40px;gap:9px;padding:8px 12px}.hero-speaker-tag .hero-speaker-label{font-size:6.2px}.hero-speaker-tag .hero-speaker-name{font-size:11.5px}.hero-speaker-tag .hero-speaker-role{font-size:7.8px}}
+@media(max-width:600px){.hero-speaker-tag{width:calc(100vw - 38px);min-height:37px;gap:6px;padding:8px 8px}.hero-speaker-tag .hero-speaker-label{font-size:5.8px;letter-spacing:.04em}.hero-speaker-tag .hero-speaker-name{font-size:10.2px}.hero-speaker-tag .hero-speaker-role{font-size:7.2px}}
+@media(max-width:360px){.hero-speaker-tag{gap:5px;padding:7px 6px}.hero-speaker-tag .hero-speaker-label{font-size:5.4px}.hero-speaker-tag .hero-speaker-name{font-size:9.6px}.hero-speaker-tag .hero-speaker-role{font-size:6.8px}}
+
+
+/* 메인 행동 버튼을 한 개로 통합하고, 일정에서 온라인 예배로 연결 */
+.hero-single-cta{gap:20px;padding-inline:29px}
+.schedule-online-shortcut{margin-top:34px;display:flex;align-items:center;justify-content:space-between;gap:22px;padding:25px 29px;background:rgba(255,255,255,.065);border:1px solid rgba(233,193,129,.3);border-radius:5px}
+.schedule-online-copy{min-width:0}
+.schedule-online-eyebrow{display:block;color:var(--gold);font:800 10px var(--latin);letter-spacing:.15em;margin-bottom:9px}
+.schedule-online-copy strong{font-size:17px;font-weight:800;letter-spacing:-.035em}
+.schedule-online-copy p{font-size:12px;line-height:1.8;color:#b7c5d6;margin:7px 0 0}
+.schedule-online-link{display:inline-flex;align-items:center;justify-content:center;gap:14px;flex-shrink:0;background:var(--gold);padding:14px 18px;min-height:46px;color:#172640;font-size:13px;font-weight:800;border-radius:3px;transition:background .2s}
+.schedule-online-link:hover{background:#f1d4a0}
+@media(max-width:600px){.hero-single-cta{padding-inline:20px}.schedule-online-shortcut{padding:22px 18px;flex-direction:column;align-items:flex-start;gap:16px}.schedule-online-link{width:100%;font-size:12px}.schedule-online-copy strong{font-size:16px}}

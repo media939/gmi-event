@@ -15,7 +15,7 @@ window.EVENT_DATA = {
   address: '150 S. Brookhurst Rd., Fullerton, CA 92833',
   phone: '714-446-6200',
   website: 'https://gracemi.com/',
-  livestreamUrl: 'https://gracemi.com/',
+  livestreamUrl: 'https://www.youtube.com/c/GKCTV/live',
   intro: '감사는 우리의 믿음을 자라게 하고, 슬픔을 기쁨으로 바꾸며, 삶 가운데 새로운 은혜의 문을 엽니다. 여섯 번의 새벽, 말씀과 기도로 하나님께 나아가는 은혜의 자리에 여러분을 초대합니다.',
   talks: [
     { date:'2026-11-16', weekday:'월요일', shortDay:'월', english:'MON', time:'05:15', label:'욥의 신앙', scripture:'욥기 1:20–22', title:'감사하면 믿음이 자라고 하나님이 영광을 받으십니다', youtubeUrl:'' },

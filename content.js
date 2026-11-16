@@ -23,6 +23,6 @@ window.EVENT_DATA = {
     { date:'2026-11-18', weekday:'수요일', shortDay:'수', english:'WED', time:'05:15', label:'바울의 신앙', scripture:'사도행전 16:19–26', title:'감사하면 마귀의 역사 대신 성령의 기적이 생깁니다', youtubeUrl:'' },
     { date:'2026-11-19', weekday:'목요일', shortDay:'목', english:'THU', time:'05:15', label:'사마리아인의 신앙', scripture:'누가복음 17:12–19', title:'감사하면 저주 대신 감사할 일들이 생깁니다', youtubeUrl:'' },
     { date:'2026-11-20', weekday:'금요일', shortDay:'금', english:'FRI', time:'05:15', label:'아비가일의 신앙', scripture:'사무엘상 25:26–28', title:'감사하면 원수 대신 친구가 생깁니다', youtubeUrl:'' },
-    { date:'2026-11-21', weekday:'토요일', shortDay:'토', english:'SAT', time:'06:00', label:'요셉의 신앙', scripture:'창세기 45:1–8', title:'감사하면 불통 대신 인생이 형통합니다', youtubeUrl:'' }
+    { date:'2026-11-21', weekday:'토요일', shortDay:'토', english:'SAT', time:'06:00', label:'욥의 신앙', scripture:'욥기 1:20-22', title:'감사하면 믿음이 자라고 하나님이 영광을 받으십니다.', youtubeUrl:'' }
   ]
 };
